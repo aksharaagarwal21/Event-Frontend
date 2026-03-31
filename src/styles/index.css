@@ -1,0 +1,59 @@
+/* Keep Poppins and Montserrat from Google */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&family=Poppins:wght@300;400;600&display=swap");
+
+/* --- LOAD LOCAL FONTS --- */
+@font-face {
+  font-family: "Blood Crow";
+  /* Path goes up one level from 'styles' to 'src', then down to 'assets/fonts' */
+  src: url("../assets/fonts/bloodcrow.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "October Crow";
+  src: url("../assets/fonts/October Crow.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #000003; /* Deepest Black */
+  color: #d2d8d6; /* Mist Silver */
+  font-family: "Poppins", sans-serif; /* Default body font */
+  overflow-x: hidden;
+  background-image: radial-gradient(circle at 50% 0%, #142b20 0%, #000003 70%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar (Matches the Blood/Toxic theme) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080a0b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #b12c3e, #36986a);
+  border-radius: 5px;
+  border: 2px solid #000003;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #d4364b, #45ba81);
+}
+
+.glass-panel {
+  background: rgba(8, 10, 11, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(210, 216, 214, 0.1);
+}
